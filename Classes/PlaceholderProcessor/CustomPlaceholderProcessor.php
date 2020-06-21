@@ -9,7 +9,7 @@ class CustomPlaceholderProcessor implements \TYPO3\CMS\Core\Configuration\Proces
 
     public function canProcess(string $placeholder, array $referenceArray): bool
     {
-        return strpos($placeholder, '%susisays(') !== false;
+        return str_contains($placeholder, '%susisays(');
     }
 
 
